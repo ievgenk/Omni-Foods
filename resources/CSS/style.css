@@ -126,7 +126,8 @@ h3 {
                 /* BUTTONS */
 /* --------------------------------------- */
 
-.btn:link, .btn:visited{
+.btn:link, .btn:visited,
+input[type=submit]{
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -135,7 +136,7 @@ h3 {
   transition: background-color 0.3s, border 0.3s, color 0.3s;
 }
 
-.btn-full:link, .btn-full:visited {
+.btn-full:link, .btn-full:visited,input[type=submit] {
   background-color: #ff9f43;
   border: 1px solid #ff9f43;
   color: white;
@@ -147,7 +148,7 @@ h3 {
  color: #ff9f43;
 }
 
-.btn:hover, .btn:active {
+.btn:hover, .btn:active,input[type=submit]:hover,input[type=submit]:active {
   background-color: #fe7c00;
 }
 
@@ -396,6 +397,7 @@ blockquote::before {
 
 .section-plans {
   background-color: #f4f4f4;
+  padding-bottom: 40px;
 }
 .plan-box {
   background-color: white;
@@ -442,4 +444,80 @@ blockquote::before {
   background-color: rgb(255, 255, 255);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}
+
+/* ---------------------------------------- */
+                /* CONTACT FORM */
+/* --------------------------------------- */
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+input[type=text],input[type=email],select,textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+}
+/* ---------------------------------------- */
+                /* FOOTER */
+/* --------------------------------------- */
+
+footer {
+  background-color: #333;
+  padding: 50px;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+ 
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+  
+}
+
+.footer-nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 2rem;
+}
+
+.social-links:last-child, .footer-nav: :last-child {
+  margin: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: rgb(121, 119, 119);
+  transition: color 0.2s;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd;
+}
+
+footer p {
+  color: #888;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.social-links li a:hover,
+.social-links li a:active {
+  color: #ddd;
 }
